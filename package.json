@@ -1,11 +1,12 @@
+
 {
   "name": "tuto",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+"scripts": {
+  "start": "nodemon index.js",
+  "test": "mocha 'src/test/**/*.test.js' --exit"
+},
   "author": "",
   "license": "ISC",
   "description": "",
@@ -22,5 +23,10 @@
     "nodemon": "^3.1.9",
     "passport": "^0.7.0",
     "passport-google-oauth20": "^2.0.0"
+  },
+  "devDependencies": {
+    "chai": "^5.2.0",
+    "mocha": "^11.1.0",
+    "supertest": "^7.0.0"
   }
 }
